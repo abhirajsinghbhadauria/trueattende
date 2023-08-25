@@ -2,40 +2,33 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Wrapper from './style'
 
+
 const Teacher= () => {
   return (
     <Wrapper>
-        <main>
-          <h1>Attendance System</h1>
-          <div className='button inner'>
-            <input type="button" value="Mark" />
-            <input type="button" value="View" />
-          </div>
-          
-
-          <div className='studentYear inner'>
-            <label htmlFor="">Select Year:</label>
-            <select name="year" id="" >
-                <option disabled selected>Select year</option>
-                <option value="first">1st year</option>
-                <option value="second">2nd year</option>
-                <option value="third">3rd year</option>
-                <option value="forth">4th year</option>
-            </select>
-            </div>
-
-          <div className='studentSection inner'>
-            <label htmlFor="">Select Section:</label>
-            <select name="section" id="" >
-                <option disabled selected>Select section</option>
-                <option value="A">Sec -A</option>
-                <option value="B">Sec -B</option>
-                <option value="C">Sec -C</option>
-            </select>
-          </div>
-
-        </main>
-        
+      <div className='inner'>
+        <form className='year'>
+          <input type="button" value="I" />
+          <input type="button" value="II" />
+          <input type="button" value="III" />
+          <input type="button" value="IV" />
+        </form>
+        <form className='search'>
+            <input type="text" placeholder='Search' />
+            <input type="button" value="Search" />
+        </form>
+        <form className='classes'>
+          <Link to = 'cs-i-a'><input type="button" value="CS-A-I" /></Link>
+          <input type="button" value="CS-B-I" />
+          <input type="button" value="CS-C-I" />
+          <input type="button" value="CS-A-II" />
+          <input type="button" value="CS-B-II" />
+          <input type="button" value="CS-C-II" />
+          <input type="button" value="CS-A-III" />
+          <input type="button" value="CS-B-III" />
+          <input type="button" value="CS-C-III" />
+        </form>
+      </div>
     </Wrapper>
     
   )

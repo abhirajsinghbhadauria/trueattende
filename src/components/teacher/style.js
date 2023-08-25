@@ -1,51 +1,40 @@
-import {styled} from "styled-components"
-const Wrapper=styled.main`
+import { styled } from "styled-components";
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+const Wrapper = styled.section`
+
+.inner{
+    
+    margin:auto;
+    padding:10px;
+}
+.year{
+    width:100%;
+    margin: 0 auto;
+}
+.year input{
+    width:90px;
+    height:90px;
+    padding:10px;
+    margin: 20px 0;
+    
 }
 
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.search input[type=text]{
+    width:200px;
+    height:50px;
 }
-
-.button.inner {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-  input{
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    &:hover{
-        background-color: darkblue;
-    }
-  }
- 
+.search input[type = button]{
+    width:120px;
+    height:50px;
+    border:none;
+    background-color:#007BFF;
 }
-
-.studentYear.inner,
-.studentSection.inner {
-  margin-bottom: 20px;
-}
-
-select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-label {
-  font-weight: bold;
-  margin-right: 10px;
+.classes input{
+    width:124px;
+    height:120px;
 }
 
 `
+
 export default Wrapper;

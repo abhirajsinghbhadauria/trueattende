@@ -10,7 +10,7 @@ const Login = () => {
     const navigate=useNavigate();
     const dispatch=useDispatch();
     const login=()=>{
-      axios.post("https://server-api1-li2k.onrender.com/api/user/login",{
+      axios.post("https://quizattendace.onrender.com/api/user/login",{
         contact,password
       }).then((res)=>{
         console.log(res)
